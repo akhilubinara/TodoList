@@ -1,0 +1,20 @@
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#reg{
+    background-color:rgb(10,1,45,0.7);
+    border-radius:20px;
+    
+}
+*{
+    color:white
+}
+input{
+    background-color: rgba(63, 62, 62, 0.4);
+    border: 0;
+    
+}
+input{
+    color: black;
+}
+ 

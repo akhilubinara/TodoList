@@ -1,0 +1,27 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:wght@900&family=Ubuntu:ital@1&display=swap'); 
+ *{
+     color: aliceblue;
+ }
+ img{
+     width: 20px;
+     border-radius: 50%;
+ }
+ .p{
+     font-size: 100px;
+     font-weight: 900;
+     color: yellow;
+     font-family: 'Merriweather', serif;
+ }
+ .p1{
+     font-size: 40px;
+ }
+ .login{
+    background-color:rgb(10,1,45,0.7);
+    padding:50px;
+    border-radius:20px
+ }
+input{
+    color: black;
+}
+ 

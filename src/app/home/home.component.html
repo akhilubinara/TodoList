@@ -1,0 +1,48 @@
+<nav class="navbar ">
+    <h3><a href=""> </a></h3>
+    <h2>TODO List</h2>
+   
+    <div><button id="bt" (click)="logout()">Logout</button></div>
+  </nav>
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+
+
+    <div class="container  pt-0 m-5 p-5">
+      <div class="d-flex mb-4">
+        <div id="gr" class="text-white mb-0 " >Welcome &nbsp;</div>
+        <div id="gr" class="text-white w-75 mb-2"><marquee behavior="slide" direction="left">{{username}}</marquee></div> 
+      </div>
+
+      <div class="input-group mb-3">
+        <input id="task" [(ngModel)]="task" type="text" class="form-control" placeholder="Enter the task here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append mt-2">
+          <button id="bton" (click)="AddTask()" class="btn m-0 p-0 btn-outline-success" type="button">+Add Task</button>
+        </div>
+      </div>
+    
+    <div class="row mt-5 mb-3">
+      <h4 class="text-white">Your tasks are :</h4>
+        <div id="tasks" *ngFor="let task of tasks; let i = index" class="mt-2">
+          
+              <div class="container w-100 ps-2">{{i+1}}. &nbsp;{{task}}</div>
+            
+            <div class="col d-flex">
+              <button id="bbt" (click)="editTask(i)" class="btn"> 
+                <img src="../../assets/img/edit1.png" alt="">
+              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button class="btn btn-outline-danger" (click)="removeTask(i)" >
+                <img src="../../assets/img/del.jpg" alt="">
+                <i class="fa-solid fa-trash"></i>
+              </button><br> 
+            </div>    
+        </div>
+    </div>
+  </div>
+
+
+  </div>
+  <div class="col-1"></div>
+</div>
